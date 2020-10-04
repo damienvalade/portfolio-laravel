@@ -16,7 +16,7 @@ class DiplomaTable extends Migration
         Schema::create('diploma', function (Blueprint $table){
            $table->id();
            $table->string('name',60);
-           $table->string('place',60);
+           $table->string('place',60)->nullable(true);
            $table->string('school',60);
            $table->dateTime('obtained_on');
            $table->text('description');

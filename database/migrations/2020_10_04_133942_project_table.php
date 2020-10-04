@@ -20,8 +20,8 @@ class ProjectTable extends Migration
             $table->string('picture',50);
             $table->string('technologies',50);
             $table->longText('description');
-            $table->string('url',100);
-            $table->string('git',100);
+            $table->string('url',100)->nullable(true);
+            $table->string('git',100)->nullable(true);
             $table->string('slug',50);
             $table->unsignedBigInteger('project_type');
             $table->foreign('project_type')->references('id')->on('project_type');

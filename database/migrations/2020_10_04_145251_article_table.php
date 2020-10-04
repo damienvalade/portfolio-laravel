@@ -15,7 +15,7 @@ class ArticleTable extends Migration
     {
         Schema::create('article', function (Blueprint $table){
             $table->id();
-            $table->string('title',20);
+            $table->string('title',100);
             $table->string('picture',50);
             $table->date('date');
             $table->string('short_content',250);
