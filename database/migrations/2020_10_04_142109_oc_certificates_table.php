@@ -13,7 +13,7 @@ class OcCertificateTable extends Migration
      */
     public function up()
     {
-        Schema::create('oc_certificate', function (Blueprint $table){
+        Schema::create('oc_certificates', function (Blueprint $table){
             $table->id();
             $table->string('name', 100);
             $table->bigInteger('number');
@@ -30,6 +30,6 @@ class OcCertificateTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('oc_certificate');
+        Schema::dropIfExists('oc_certificates');
     }
 }

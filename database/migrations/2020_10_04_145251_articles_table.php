@@ -13,7 +13,7 @@ class ArticleTable extends Migration
      */
     public function up()
     {
-        Schema::create('article', function (Blueprint $table){
+        Schema::create('articles', function (Blueprint $table){
             $table->id();
             $table->string('title',100);
             $table->string('picture',50);
@@ -31,6 +31,6 @@ class ArticleTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('article');
+        Schema::dropIfExists('articles');
     }
 }

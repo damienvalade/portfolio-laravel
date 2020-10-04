@@ -13,7 +13,7 @@ class DiplomaTable extends Migration
      */
     public function up()
     {
-        Schema::create('diploma', function (Blueprint $table){
+        Schema::create('diplomas', function (Blueprint $table){
            $table->id();
            $table->string('name',60);
            $table->string('place',60)->nullable(true);
@@ -32,6 +32,6 @@ class DiplomaTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('diploma');
+        Schema::dropIfExists('diplomas');
     }
 }
