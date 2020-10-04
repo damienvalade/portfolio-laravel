@@ -1,6 +1,6 @@
-{# **************** #}
-{# **** Layout **** #}
-{# **************** #}
+{{-- # **************** # --}}
+{{-- # **** Layout **** # --}}
+{{-- # **************** # --}}
 
 <html lang="fr">
 <head>
@@ -36,6 +36,8 @@
     <link rel="stylesheet" href="/dist/js/aos/aos.css" />
     <link href="/fontawesome/css/all.css" rel="stylesheet">
 
+    @yield('link')
+
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/errors.css" rel="stylesheet">
 
@@ -46,7 +48,7 @@
 @include('layouts.navbar')
 
 <main>
-    @yield('content');
+    @yield('content')
 </main>
 
 @include('layouts.footer')
@@ -56,6 +58,7 @@
 <script src="/dist/js/bootstrap/bootstrap.min.js"></script>
 <script src="/dist/js/aos/aos.js"></script>
 
+    @yield('script')
 
 </body>
 </html>

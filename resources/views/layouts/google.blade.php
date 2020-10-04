@@ -1,4 +1,7 @@
-<!-- Global site tag (gtag.js) - Google Analytics -->
+{{-- # **************** # --}}
+{{-- # **** google **** # --}}
+{{-- # **************** # --}}
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129748371-1"></script>
 <script>
     window.dataLayer = window.dataLayer || [];

@@ -1,6 +1,6 @@
-{# **************** #}
-{# **** Footer **** #}
-{# **************** #}
+{{-- # **************** # --}}
+{{-- # **** Footer **** # --}}
+{{-- # **************** # --}}
 
 <footer class="footer bg-dark pt-3 pb-3">
     <ul class="container d-flex justify-content-center mb-0">
