@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Diploma;
-use App\Models\OcCertificate;
-use App\Models\Project;
+use App\Models\Diplomas;
+use App\Models\OcCertificates;
+use App\Models\Projects;
 use App\Models\Skills;
 use Illuminate\Http\Request;
 
@@ -19,18 +19,24 @@ class HomeController extends Controller
     public function __construct()
     {
         $this->skills = Skills::all();
-        $this->diploma = Diploma::all();
-        $this->oc_certificate = OcCertificate::all();
-        $this->project = Project::all();
+        $this->diploma = Diplomas::all()->sortByDesc("obtained_on");
+        $this->oc_certificate = OcCertificates::all()->sortByDesc("date");
+        $this->project = Projects::all()->sortByDesc("date");
     }
 
     public function index()
     {
+
+        $personal = $this->project->where('project_type', '=', '1');
+        $school = $this->project->where('project_type', '=', '2');
+        $client = $this->project->where('project_type', '=', '4');
         return view('publicside.home', [
             'skills' => $this->skills,
-            'diploma' => $this->diploma,
-            'oc_certificate' => $this->oc_certificate,
-            'project' => $this->project,
+            'diplomas' => $this->diploma,
+            'oc_certificates' => $this->oc_certificate,
+            'personals' => $personal,
+            'schools' => $school,
+            'clients' => $client
         ]);
     }
 }
