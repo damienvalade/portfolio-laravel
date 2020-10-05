@@ -14,3 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'App\Http\Controllers\HomeController@index')->name('main');
+
+Route::get('/contact', [
+    'uses' => 'App\Http\Controllers\ContactUsFormController@createForm'
+]);
+
+// Post form data
+Route::post('/contact', [
+    'uses' => 'App\Http\Controllers\ContactUsFormController@ContactUsForm',
+    'as' => 'contact'
+]);
