@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c87bb951-52d8-4f05-b96d-73d439fe7d19" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_02_120801_diplomas_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_02_120801_diplomas_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_04_133942_projects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_04_133942_projects_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_04_142109_oc_certificates_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_04_142109_oc_certificates_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_04_145251_articles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_04_145251_articles_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +156,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601639255849</updated>
       <workItem from="1601639257284" duration="1692000" />
-      <workItem from="1601816266938" duration="21181000" />
+      <workItem from="1601816266938" duration="22205000" />
     </task>
     <servers />
   </component>
@@ -168,6 +164,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="726" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601860877445">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="726" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1601860877445" />
     <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1601819011331">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
